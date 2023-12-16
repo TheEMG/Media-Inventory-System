@@ -1,0 +1,95 @@
+table{
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background-color: white; 
+}
+
+/*targets the th elemenets (headers)*/
+.header-name{
+  background-color: #f4f4f4;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  padding:10px 0;
+}
+
+td{
+  font-size: 25px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding:10px 0;
+
+}
+
+
+tbody tr:hover {
+  background-color: #eaeaea;
+}
+
+button {
+  background-color: #3498db; /* Blue for buttons */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-buttons button {
+  margin-right: 4px; /* Adds space to the right of each button */
+  padding: 6px 12px; /* Smaller padding to reduce button size */
+}
+
+/* Apply the margin-right to all buttons except the last one */
+.edit-buttons button:not(:last-child) {
+  margin-right: 8px; /* Adds more space between buttons */
+}
+
+.delete-button {
+  background-color: #e57373; /* Softer shade of red */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #ef9a9a; /* Lighter red on hover */
+}
+
+.save-button {
+  background-color: #4caf50; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.save-button:hover {
+  background-color: #66bb6a; /* Lighter green on hover */
+}
+
+.cancel-button {
+  background-color: #2196f3; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+  background-color: #64b5f6; /* Lighter blue on hover */
+}
+
+button:hover {
+  background-color: #2980b9;
+}

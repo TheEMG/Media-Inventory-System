@@ -1,0 +1,50 @@
+.search-bar-container{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.search-input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 300px; /* Replace 300px with the length you desire */
+}
+
+.go-back-button,
+.search-button,
+.add-button{
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-button{
+  background-color: #4caf50;
+  color: white;
+}
+
+.add-button:hover {
+  background-color: #66bb6a; /* Lighter green on hover */
+}
+
+
+/* Default state for "Go Back" button is not displayed */
+.go-back-button {
+  display: none;
+  
+}
+
+/* When "Go Back" button is active (after search), it is displayed */
+.go-back-button.active {
+  display: inline-block;
+  background-color: #e57373; /* This is a softer shade of red */
+  color: white; /* White text is generally readable on a softer red background */
+}
+
+.go-back-button:hover {
+  background-color: #ef9a9a; /* Lighter red on hover */
+}
