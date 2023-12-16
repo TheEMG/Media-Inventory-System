@@ -1,0 +1,15 @@
+.inventory-status-card {
+  display: flex; /* Establishes a flex container */
+  flex-direction: column; /* Stacks flex items vertically */
+  align-items: center; /* Centers items horizontally in the container */
+  justify-content: center; /* Centers items vertically in the container */
+  width: 25%; /* Adjust width as needed */
+  margin-left: 0; /* Aligns the card to the left */
+  padding: 20px; /* Adds some padding around the content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds some shadow for depth */
+}
+
+.chart-container {
+  width: 200px; /* Fixed size or use percentage for responsiveness */
+  height: 200px;
+}

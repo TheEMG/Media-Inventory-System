@@ -1,0 +1,38 @@
+.inventory-progress-container {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 20px;
+  width: 100%;
+  display: flex; /* Use flexbox to position children */
+  align-items: center; /* Center children vertically */
+  justify-content: flex-start; /* Align children to the start of the container */
+  position: relative; /* Keep position relative for the container */
+  padding: 0px;
+}
+
+.inventory-progress {
+  background-color: #4caf50;
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+  z-index: 1; /* Ensure the progress bar is below the text */
+}
+
+.total-inventory-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  line-height: 20px;
+  color: #333;
+  font-weight: bold;
+  z-index: 2; /* Ensure the text is above the progress bar */
+}
+.total-inventory-card {
+  padding: 50px; /* Increased padding for more space inside the card */
+  border-radius: 8px; /* Maintain rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 20px; /* Increase space between cards */
+  flex: 1 0 calc(33% - 40px); /* Flex grow, flex shrink, and basis adjusted for margins */
+  box-sizing: border-box;
+}
+

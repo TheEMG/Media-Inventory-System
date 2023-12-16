@@ -1,0 +1,56 @@
+
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  
+}
+
+.button-parent {
+  display: flex; /* Use flexbox to align children */
+  justify-content: center; /* Center children horizontally */
+  align-items: center; /* Center children vertically */
+}
+
+.add-book-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px; /* Adjust or remove margin as needed */
+}
+
+
+
+/* If individual cards have a class you can target them for specific adjustments if needed */
+
+
+/* Media query for responsive adjustments */
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.calendar-todo-container {
+  display: flex;
+justify-content: space-around;
+  align-items:center; /* Aligns items to the top of the container */
+  padding: 65px;
+  gap: 20px; /* Adds space between the calendar and the todo list */
+}
+/* Additional styling for the calendar to ensure it doesn't stretch too wide */
+
+/* If you want them to wrap on smaller screens */
+@media (max-width: 768px) {
+  .calendar-todo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
